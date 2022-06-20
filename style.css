@@ -14,7 +14,10 @@ body {
 header {
    padding: 20px 35px;
    background-color: #39a6b2;
-}
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   }
 
 
 header h1 {
@@ -35,8 +38,12 @@ header nav {
  margin: 7px 0;
 }
 
-header nav ul li {
- display: inline;
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
 header nav ul li a {
@@ -84,9 +91,8 @@ section {
     background-size: cover;
 
     background-position: center;
-    position: relative;
-
-  }
+   
+   }
 
   /* Hero Style End */
 
